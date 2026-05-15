@@ -1,0 +1,3 @@
+package com.skyfek.app;
+import android.app.Activity;import android.os.Bundle;import android.webkit.WebSettings;import android.webkit.WebView;import android.webkit.WebViewClient;
+public class MainActivity extends Activity{private WebView webView;private static final String START_URL="https://skyfek.com";public void onCreate(Bundle b){super.onCreate(b);webView=new WebView(this);setContentView(webView);WebSettings s=webView.getSettings();s.setJavaScriptEnabled(true);s.setDomStorageEnabled(true);s.setLoadWithOverviewMode(true);s.setUseWideViewPort(true);webView.setWebViewClient(new WebViewClient());webView.loadUrl(START_URL);}public void onBackPressed(){if(webView!=null&&webView.canGoBack()){webView.goBack();}else{super.onBackPressed();}}}

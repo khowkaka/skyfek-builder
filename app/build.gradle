@@ -1,2 +1,3 @@
 plugins { id 'com.android.application' }
-android { namespace 'com.skyfek.app'; compileSdk 35; defaultConfig { applicationId 'com.skyfek.app'; minSdk 23; targetSdk 35; versionCode 1; versionName '1.0.0' } }
+
+android { namespace 'com.skyfek.climamapcom'; compileSdk 35; defaultConfig { applicationId 'com.skyfek.climamapcom'; minSdk 23; targetSdk 35; versionCode 1; versionName '1.0.0' } }
